@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #edaa0f;
+    --secondary-color: #1e1e1e;
+    --tertiary-color: #131313;
+    --boxshadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: var(--secondary-color) !important;
+    font-family: "Poiret One", sans-serif !important;
+    font-weight: 600!important;
+    font-style: normal;
+    overflow-x: hidden;
+  
+}
+
+/* Navbar */
+
+video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(0.6);
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 5rem !important;
+    margin-bottom: 1rem !important;
+    font-weight: bold!important;
+    margin-bottom: 30px !important;
+    font-family: "", ;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+h2 {
+    font-size: 3rem !important;
+    margin-bottom: 30px !important;
+    margin-top: 0px !important;
+    color: var(--primary-color) !important;
+    text-shadow: 2px 2px 2px #000000;
+
+}
+
+.sectionDark{
+    background-color: var(--tertiary-color);
+    padding: 100px 0;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+
+}
+
+.active {
+    color: var(--primary-color) !important;
+}
+
+.buttonUp{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+   width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.buttonUp:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.buttonUp a{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 1px 5px 10px rgb(0, 0, 0);
+}
+
+.buttonUp a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.buttonUp i{
+    width: 100%;
+    margin: 8px;
+}
+
+.buttonUp i:hover{
+    color: var(--primary-color);
+}
+
+.buttonSpecial {
+    width: 200px;
+    padding: 15px 20px;
+    background-color: #f1c40f00;
+    color: var(--primary-color);
+    border: none;
+    font-size: 1.3rem !important;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px !important;
+    transition: all 0.3s ease;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+}
+
+.buttonSpecial:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Sobre nosotros */
+
+.box-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px!important;
+    margin:15px;
+}
+
+.box-about h3{
+    color: var(--primary-color);
+}
+
+.separation{
+width: 300px;
+height: 2px;
+background-color: var(--primary-color);
+margin: 0 auto;
+}
+
+/* Menu */
+
+.menuBox {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border-left: 2px solid var(--primary-color);
+    box-shadow: var(--boxshadow);
+    transition: all 0.3s ease;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.menuBox img {
+    width: 120px !important;
+    height: 120px !important;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;  
+}
+
+.menuBox img:hover {
+    transform: scale(1.05);
+}
+
+.menuBox:hover {
+    transform: translateY(-10px);
+    background-color: var(--tertiary-color);
+}
+
+/* Unique */
+
+.card-unique{
+    width: 250px!important;
+    border-radius: 10px;
+    padding: 15px 0;
+    box-shadow: 5px 8px 25px 5px rgba(0, 0, 0, 0.8);
+    margin: 0 20px;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.card-unique:hover{
+    transform: translateY(-10px);
+    filter: contrast(1.2);
+}
+
+.card-unique img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.container-unique {
+    position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
+    background-image: url(../assets/still-life-relaxing-coffee-cup-terrace.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 60vh;
+}
+
+.container-unique::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con 50% de opacidad */
+    z-index: 1; /* Asegúrate de que la superposición esté por encima de la imagen de fondo */
+}
+
+.container-unique > * {
+    position: relative;
+    z-index: 2; /* Asegúrate de que el contenido esté por encima de la superposición */
+}
+
+/* Good time */
+
+.good{
+    padding-top: 300px;
+}
+
+.img-good{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: var(--boxshadow)!important;
+}
+
+/* Testimonial */
+
+.txt-testimonials{
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+}
+
+.img-testimonial{
+    width: 80px!important;
+    height: 80px!important;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--boxshadow);
+    margin: 20px 0;
+
+}
+
+.testimonial {
+    width: 100% !important;
+    height: 70vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.6)
+    ), url(../assets/Captura\ de\ pantalla\ 2024-11-25\ 161602.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 200px;
+    padding-bottom: 50px;
+}
+
+/* Blog */
+
+.container-blog{
+    width: 100%;
+    height: auto;
+    background-color: var(--tertiary-color)!important;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-blog{
+    border-radius: 10px!important;
+    box-shadow: var(--boxshadow);
+    background-color: var(--secondary-color)!important;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card-blog:hover{
+    transform: translateY(-10px);
+    filter: contrast(1.1);
+}
+
+.img-blog{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 25px!important;
+}
+
+footer{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.6)
+    ), url(../assets/cafes/836677339_244354304_1024x576.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+}
+
+/* Media qwerys */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3.5rem !important;
+        max-width: 400px;
+    }
+    .container-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
+        margin: 0 auto!important;
+    }
+    .menuBox {
+        width: 95%;
+        margin: 0 auto!
+        ;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .menuBox .precio{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 15px 0 ;
+    }   
+
+    .menuBox img {
+        width: 100px !important;
+        height: 100px !important;       
+       margin: 0 auto!important;
+       margin-bottom: 1rem;
+    }
+
+    .menuBox h3 {
+        text-align: center;
+    }
+
+    .card-unique {
+        width: 90% !important; /* Ancho responsivo */
+      
+    }
+
+    .sobreNos-1 {
+        margin: 0 auto; /* Eliminar margen negativo en móviles */
+        padding: 1rem;
+    }
+
+    .container-unique {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 160vh;
+        padding: 1rem;
+    }
+
+    .row-unique {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 2rem !important; /* Ajuste del margen superior */
+    }
+
+
+    .good{
+        padding-top: 100px;
+    }
+}
+
+
